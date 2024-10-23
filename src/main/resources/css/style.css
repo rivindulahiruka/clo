@@ -1,0 +1,49 @@
+/* Style for the entire table */
+.table-view {
+    -fx-background-color: transparent; /* Make table body background transparent */
+    -fx-border-color: #00448B; /* Dark blue border */
+    -fx-border-width: 2px;
+}
+
+/* Transparent background for column headers */
+.table-view .column-header-background {
+    -fx-background-color: transparent; /* Transparent header background */
+}
+
+/* Style for the column headers */
+.table-view .column-header {
+    -fx-background-color: transparent; /* Transparent header background */
+    -fx-text-fill: select * from category; /* White text color */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-border-width: 0 0 2px 0; /* Border at the bottom of the header */
+    -fx-border-color: transparent transparent white transparent; /* White border at the bottom */
+}
+
+/* Style for the table rows */
+.table-row-cell {
+    -fx-background-color: transparent; /* Transparent row background */
+    -fx-border-color: transparent; /* No row border */
+}
+
+.table-row-cell:odd {
+    -fx-background-color: transparent; /* Transparent background for odd rows */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #00448B; /* Dark blue for selected rows */
+    -fx-text-fill: white; /* White text for selected rows */
+}
+
+/* Style for the table cells */
+.table-cell {
+    -fx-padding: 8px; /* Padding for each cell */
+    -fx-font-size: 12px; /* Font size for cell text */
+    -fx-text-fill: #333; /* Dark grey text */
+    -fx-background-color: transparent; /* Transparent cell background */
+}
+
+/* Focused cell */
+.table-cell:focused {
+    -fx-border-color: #00448B; /* Dark blue border around focused cell */
+    -fx-border-width: 1px;
+}
